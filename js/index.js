@@ -15,6 +15,27 @@ $(function(){
  		var groupId= e.target.parentElement.dataset.group;
  		alert("group id: " + groupId);
  	});
+
+ 	$(".addGroup").click(function(e){
+ 		var addGroupTmpl = ` <div class="addGroupForm">
+			
+ 			<div class="step1">
+				<div class="groupImagePreview"></div>
+				<div class="uploadGroupImage">Upload Group Image</div>
+				
+				<div class="groupNameContainer">
+					<input id="groupNameInp" type="text" placeholder="Group name"/>
+				</div>
+
+ 			</div>
+
+ 			<div class="navigation"></div>
+
+ 		</div>
+ 		`;
+ 		$(".content").html(addGroupTmpl);
+ 		$(".bottombar").hide();
+ 	});
 });
 
 
