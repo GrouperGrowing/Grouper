@@ -1,3 +1,35 @@
-body {
+$topBarHeight: 50px;
+
+.topbar{
+	height: $topBarHeight;
+	display: flex;
+
+	.burger{
+		background-image: url("/assets/icons/grouper_icons_menu.png");
+		background-size: 100% 100%;
+		width: 50px;
+
+	}
+	.logoArea{
+		width: 100%;
+		.logo{
+			background-image: url("/assets/logo/grouper logo-04.png");
+			background-size: 100%;
+		    width: 130px;
+		    height: 100%;
+		    margin: auto;
+		    background-repeat: no-repeat;
+		    background-position-y: 4px;
+		}
+	}
+	.actionArea{
+		width: 50px;
+
+	}
+
+}
+
+.content{
+	height: calc(100% - #{$topBarHeight});
 	background-color: red;
 }

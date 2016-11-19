@@ -8,7 +8,10 @@ module.exports = {
     devtool: 'inline-source-map',
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" },
+            //{ test: /\.css$/, loader: "style!css" },
+            { test: /\.css$/, loader: "style-loader!css-loader?root=." },
+            { test: /\.png$/, loader: "url-loader?limit=100000" },
+            { test: /\.jpg$/, loader: "file-loader" },
             {
                 test: /\.scss$/,
                 loaders: ["style", "css", "sass"]
