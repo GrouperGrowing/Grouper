@@ -1,18 +1,22 @@
 module.exports = [
 	{
+		"id": "1",
 		"name": "running ny",
 		"description": "run with us",
 		"image": "./data/images/yoga700x420.jpg"
 	},{
+		"id": "2",
 		"name": "run with us hh kjhjh  kjhjk k  hjkh",
 		"description": "run with us hh kjhjh  kjhjk k  hjkh",
 		"image": "./data/images/yoga700x420.jpg"
 	},{
+		"id": "4",
 		"name": "running ny",
 		"description": "run with us",
 		"image": "./data/images/yoga700x420.jpg"
 	},
 	{
+		"id": "5",
 		"name": "yoga tlv",
 		"description": "This group is about yoga",
 		"image": "./data/images/yoga700x420.jpg",
