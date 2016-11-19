@@ -28,6 +28,7 @@ $topBarHeight: 50px;
 	}
 
 }
+@import "addGroup";
 
 .content{
 	height: calc(100% - #{$topBarHeight});

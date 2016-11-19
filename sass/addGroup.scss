@@ -1,0 +1,61 @@
+.addGroupForm{
+	background-color: #3B85CD;
+	width: 100%;
+    height: 100%;
+    padding-top:10px;
+
+
+    .step1{
+    	height: 100%;
+    	position: relative;
+    	.groupImagePreview{
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			background-image: url(/assets/icons/grouper_icons_group.png);
+			background-size: 100%;
+			&::before{
+				content: "";
+			    width: 300px;
+			    height: 300px;
+			    background-color: white;
+			    border-radius: 50%;
+			    position: absolute;
+			    opacity: 0.2;
+			}
+    	}
+    	.uploadGroupImage{
+   			text-align: center;
+			color: white;
+			position: relative;
+			padding-top:10px;
+			
+			&::before{
+				content: "";
+				width: 30px;
+				height: 30px;
+				background-image: url(/assets/icons/grouper_icons_group.png);
+				background-size: 100%;
+			    position: absolute;
+			    left: calc(50% - 107px);
+			    top: 4px;
+
+			}
+
+
+    	}
+    	.groupNameContainer{
+    		text-align: center;
+		    margin-top: 10px;
+		    position: absolute;
+		    left: 10px;
+		    bottom: 120px;
+		    right: 10px;
+    		#groupNameInp{
+    			font-size: 20px;
+    			width: 100%;
+    			color: black;
+    		}
+    	}
+    }
+}
