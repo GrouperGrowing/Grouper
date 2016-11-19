@@ -7,8 +7,14 @@ var groups = require("../data/groups.js");
 var tmpls= require("../js/templating.js");
 
 $(function(){
+	//render groups
 	var triGroups= groupBy3(groups);
  	$(".content").html(tmpls.tmplGroup(triGroups));
+
+ 	$(".group").click(function(e){
+ 		var groupId= e.target.parentElement.dataset.group;
+ 		alert("group id: " + groupId);
+ 	});
 });
 
 

@@ -8,7 +8,7 @@ const tmplGroup = groups => html`
 	    ${groups.map(groupRow => html`
 			<div class="group-row">
 			 ${groupRow.map(group => html`
-		        <div class="group">
+		        <div class="group" data-group="$${group.id}">
 			        <div class="groupImage" style="background-image: url($${group.image});"></div>
 			        <div class="groupName">$${group.name}</div>
 			    </div>
