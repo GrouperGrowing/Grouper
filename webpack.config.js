@@ -1,8 +1,9 @@
+var path = require('path');
 module.exports = {
     entry: "./js/index.js",
     output: {
         path: __dirname,
-        filename: "dist/index.js"
+        filename: "./dist/index.js"
     },
     devtool: 'inline-source-map',
     module: {
