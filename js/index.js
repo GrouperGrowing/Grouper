@@ -1,3 +1,26 @@
 var css = require("!style!css!sass!../sass/index.scss");
 
-console.log('index.js');
+var groups = require("../data/groups.js");
+var tmpls= require("../js/templating.js");
+
+$(function(){
+	var triGroups= groupBy3(groups);
+ 	$(".content").html(tmpls.tmplGroup(triGroups));
+});
+
+
+function groupBy3(groups){
+	var triGroups=[];
+	var subGroup= [];
+	for(let i=0; i < groups.length; i++){
+		if(i%3 === 0 && i > 0){
+			triGroups.push(subGroup);
+			subGroup= [];
+		}
+		subGroup.push(groups[i]);
+		if(i === groups.length-1){
+			triGroups.push(subGroup);
+		}
+	}
+	return triGroups;
+}

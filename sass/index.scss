@@ -32,4 +32,41 @@ $topBarHeight: 50px;
 .content{
 	height: calc(100% - #{$topBarHeight});
 	background-color: red;
+
+	.groups{
+		display: table;
+		width: 100%;
+		.group-row{
+			display: table-row;
+			.group{
+				display: table-cell;
+				background-color: green;
+				width: 33.33%;
+				.groupImage{
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+					background-size: 100% 100%;
+			    	background-repeat: no-repeat;
+			    	margin: auto;
+
+
+				}
+				.groupName{
+					text-align: center;
+			    	text-overflow: ellipsis;
+				    word-wrap: break-word;
+				    width: 125px;
+				    overflow: hidden;
+				    height: 38px;
+				    font-size: 20px;
+				    background-color: purple;
+				    display: inline-block;
+				    line-height: 19px;
+
+				}
+
+			}
+		}
+	}
 }
