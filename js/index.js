@@ -1,6 +1,5 @@
-var $ = require("../node_modules/jquery/dist/jquery.min.js");
-require("../node_modules/browser-es-module-loader/dist/babel-browser-build.js");
-
+var $ = require("jquery");
+//require("../node_modules/browser-es-module-loader/dist/babel-browser-build.js");
 var css = require("!style!css!sass!../sass/index.scss");
 
 var groups = require("../data/groups.js");
